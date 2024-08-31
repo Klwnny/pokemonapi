@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import DataSetup from './components/DataSetup.vue';
+import DataSetupFallack from './components/DataSetupFallack.vue';
 </script>
 
 <template>
@@ -7,6 +8,6 @@ import DataSetup from './components/DataSetup.vue';
     <template #default>
       <DataSetup />
     </template>
-    <template #fallback> Loading... </template>
+    <template #fallback>  <DataSetupFallack /></template>
   </Suspense>
 </template>

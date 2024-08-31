@@ -1,15 +1,12 @@
 <script setup lang="ts">
-import axios from 'axios'
+import { result } from '../data.js'
 import { ref } from 'vue';
 
-const pokemons = ref([])
-const { data } = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0').catch((error) => {
-  alert(error)
-})
+const pokemons = ref( result )
 
 
 
-pokemons.value = data.results
+
 
 </script>
 <template >
