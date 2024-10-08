@@ -4,10 +4,6 @@ import { ref } from 'vue';
 
 const pokemons = ref( result )
 
-
-
-
-
 </script>
 <template >
   <div>
